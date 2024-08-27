@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+body{
+    font-family: "Jost", sans-serif;
+}
+/* header start*/
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+    background: transparent;
+    transition: 0.3s background;
+}
+.logo{
+    height: 50px;
+}
+.main-header .navbar{
+    padding: 15px 0;
+}
+.main-header .navbar-nav > li {
+    padding: 0 10px;
+}
+.main-header .navbar-nav > li > .nav-link {
+    padding: 0 5px;
+    line-height: 35px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 3px;
+    position: relative;
+}
+.main-header .navbar-nav > li > .nav-link:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    width: 0;
+    height: 2px;
+    background-color: brown;
+    transition: ease all 0.3s;
+}
+.main-header .navbar-nav > li > .nav-link:hover{
+    color: brown;
+}
+.main-header .navbar-nav > li > .nav-link:hover:after{
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.menu-icon{
+    height: 40px;
+    width: 35px;
+    padding: 5px 0;
+}
+.cv{
+    padding: 8px 20px;
+    border: 2px solid brown;
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: ease all 0.3s;
+    display: inline-block;
+    background: brown;
+    color: white;
+    box-shadow: 6px 6px 0 -1px gray;
+}
+.cv:hover{
+    color: white;
+    background: rgb(57, 57, 57);
+    border-color: rgb(48, 48, 48);
+    box-shadow: 5px 5px 0 -2px brown;
+}
+/* header end */
+/* home start  */
+.home{
+    margin: 0 15%;
+    position: relative;
+    top: 110px;
+    align-items: center;
+}
+.text-content{
+    padding-top: 60px;
+
+}
+.img-me{
+    height: 400px;
+}
+/* home end  */
+
+/* services start  */
+.top{
+    position: relative;
+    top: 150px;
+}
+.web-img{
+    height: 100px;
+
+}
+.web-design-content{
+    margin-left: 100px;
+}
+/* services end  */
+/* skill start  */
+.language-icon{
+    height: 40px;
+    cursor: pointer;
+}
+/* skill end  */
+/* project start  */
+.project-img{
+    height: 400px;
+    cursor: pointer;
+}
+.project-img:hover{
+    scale: 1.05;
+    opacity: 0.7;
+    transition: all ease 0.8s;
+}
+/* project end  */
+#contact{
+    height: 300px;
+}
+.social-icon{
+    height: 28px;
+    position: relative;
+    left: 70%;
+    padding:0 5px;
+}
+.social-icon:hover{
+    cursor: pointer;
+    transition: all ease 0.5s;
+    scale: 1.2;
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    top: 200px;
+    height: 60px;
+    font-size: 12px;
+}
+@media (max-width: 991px){
+    .main-header .navbar-collapse{
+        border-bottom: 2px solid brown;
+        border-top: 2px solid brown;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+    }
+    .logo{
+        height: 40px;
+    }
+    .main-header .navbar-nav > li + li{
+        border-top: 1px solid brown;
+    }
+    .main-header .navbar-nav > li > .nav-link{
+        line-height: 50px;
+    }
+    .main-header .navbar-nav > li > .nav-link::after{
+        display: none;
+    }
+    .main-header .navbar-toggle{
+        display: flex;
+        flex-direction: column;
+        border: none;
+        padding: 4px 9px;
+        outline: none;
+        box-shadow: none;
+    }
+    .cv{
+        position: absolute;
+        left: 35%;
+        
+    }
+ /* home  */
+    .home{ 
+        position: relative;
+        top: 0px;
+    }
+    .img-me{
+        height: 300px;
+    }
+    .social-icon{
+        height: 28px;
+    }
+    .icon-btn{
+        display: block;
+    }
+}
